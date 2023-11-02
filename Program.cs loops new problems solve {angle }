@@ -1,0 +1,89 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           
+                        int val = 5;
+                        int i, j, k;
+                        for (i = 1; i <= val; i++)
+                        {
+                            for (j = 1; j <= val; j++)
+                            {
+                                Console.Write(" "); ;
+                            }
+                            for (k = 1; k <= val; k++)
+                            {
+                                Console.Write("* ");
+                            }
+                            Console.WriteLine();
+
+                        }
+                        int val = 5;
+
+                        for (int i = 1; i <= val; i++)
+                        {
+                            for (int j = 1; j <= val; j++)
+                            {
+                                Console.Write(" *");
+
+                            }
+                            Console.WriteLine();
+                        }
+
+
+                        for (int col = 1; col <= 6; col++)
+                        {
+                            for (int row = 1; row <= col; row++)
+                            {
+                                Console.Write("* ");
+                            }
+                            Console.WriteLine();
+                        }
+           
+                        for  (int row = 8; row >= 1; row--) 
+                        {
+                        }for (int col = 1;  col<=row; col++)
+                        {
+                            Console.Write("* ");
+                        }   
+                        Console.WriteLine();
+
+            int x = 6; // total number of lines 
+            for (int i = 1; i <=x ; i++)
+            {
+                // loop for print spaces    
+                for (int j = 1 ;j <=(x-i); j++)
+                 Console.Write(" ");
+                        
+                    // loop to print star 
+                    for (int k = 1 ;k <i*2; k++)
+                   
+                        Console.Write("*");
+                        Console.WriteLine();
+                    
+                    
+               
+            }
+
+
+
+
+
+
+
+
+
+            Console.ReadLine();
+
+
+        }
+    }
+}
