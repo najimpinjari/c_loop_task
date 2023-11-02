@@ -4,91 +4,103 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1
+namespace Array_types
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-                            int i = 5, j = 5;
+/*
+            //Array - declare array
 
-                             for (i = 1; i <= 5; i++)
-                             {
-                                 for (j = 1; j <= 5; j++)
-                                 {
-                                     Console.Write("*");
-                                 }
-                                 Console.WriteLine();
+            // declare array first way 
 
+            int[] fees = new int[5];
+            fees[0] = 12000;
+            fees[1] = 13000;
+            fees[2] = 14000;
+            fees[3] = 15000;
+            fees[4] = 16000;
 
-                        int rows = 5;
+            Console.WriteLine($"number of atems ={fees.Length}");
 
-                        for (int i = 1; i <= rows; i++)
-                        {
-                            for (int j = 1; j <= i; j++)
-                            {
-                                Console.Write("*");
-                            }
-                            Console.WriteLine();
+            // declare array second way
 
-                            }
+            string[] names = new string[5]
+            {"sagar","karan","gopal","radhesh","gotya"};
+            Console.WriteLine($" \n number of names :  {names.Length}");
 
-                        int n = 5;
-                        for (int i = 1; i <= n; i++)
-                        {
-                            for (int j = 1; j <= i; j++)
-                            {
-                                Console.Write("* ");
-                            }
-                            Console.WriteLine();
-                        }
-
-                        int v = 5;
-                        for (int i = 1; i <= v; i++)
-                        {
-                            for (int j = 1; j <= i; j++)
-                            {
-                                Console.Write(j + " ");
-                            }
-                            Console.WriteLine();  }
-
-             int x, y, z;
-
-            for (x = 6; x >= 1; x--)
+            for (int i = 0; i < names.Length; i++)
             {
-                for (y = 1; y < x; y++)
-                {
-                    Console.Write(" ");
-                }
-                for (z = 6; z >= x; z--)
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine();         
-
-            for (int i = 1; i <= 5; i++) 
-            {
-                for (int j = 1; j<=5; j++)
-                {
-                    Console.Write("@ ");
-                }
-                Console.WriteLine();
-
-            for (int row = 5; row >= 1; --row)
-            {
-                for (int col = 1; col <= row; ++col)
-                {
-                    Console.Write("* ");
-                }
-
-                Console.WriteLine();
+                Console.WriteLine($" {names[i]} "); 
             }
+
+            string email = null;
+            *//**//*Console.WriteLine($"number of email : {email.Length}"); // runtime error 
+*//*
+            // reverce array 
+           
+                        int[] numbers = new int[] { 9,8,7,6,5,4,3,2,1 };
+                        Console.WriteLine("original items");
+                        for (int i = 0; i < numbers.Length; i++)
+                        { 
+                            Console.Write($"{numbers[i]} ");
+                        }
+                        Console.WriteLine($"\n Reverce Array");
+                        for (int i = numbers.Length - 1; 1 >= 0; i--)
+                        {
+                            Console.Write($"{numbers[i]}");  
+                      
+
+            int[] numbers = new int[] { 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+
+            int highest = 0;
+            for (int i = 0;i < numbers.Length; i++) 
+            { 
+                for (int j = i  + 1 ; j < numbers.Length; j++)
+                {
+                    if (numbers[j] > highest) 
+                    {
+                        highest = numbers[j];
+                    }
+                }
+            }
+            Console.WriteLine($"\n highest number : {highest}");
+
+            // reverce Array    o/p 1,2,3,4,5,6,7,8,9,
+
+            Console.WriteLine("origin items");
+            for (int i = 0; i < names.Length ; i++)
+            {
+                Console.Write($"{numbers[i]}");
+            }
+            Console.WriteLine("\nreverce array");
+            for ( int i =  numbers.Length - 1; i >= 0 ; i--)
+            {
+                Console.Write($"{numbers[i]}");
+            }
+*/
+
+            //find higher number 
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
             Console.ReadLine();
-
-             
-        }   
+        }
     }
 }
